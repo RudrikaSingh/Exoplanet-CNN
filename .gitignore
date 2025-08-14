@@ -1,0 +1,51 @@
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore virtual environment folders
+env/
+venv/
+ENV/
+.venv/
+
+# Ignore data files
+*.csv
+*.tsv
+*.txt
+*.dat
+*.h5
+
+# Ignore model files
+*.hdf5
+*.keras
+*.pb
+*.tflite
+*.pth
+*.pt
+*.joblib
+*.pkl
+
+# Ignore logs
+*.log
+logs/
+log/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/project settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore temporary files
+*.tmp
+*.temp
+~$*
