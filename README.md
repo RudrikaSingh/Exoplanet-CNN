@@ -95,6 +95,3 @@ jupyter notebook
 ## 🏆 Acknowledgments
 
 This project draws inspiration from research in **AI for astronomy** and competitions like the **Kepler exoplanet detection challenge**.
-
-```
-
