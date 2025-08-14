@@ -100,30 +100,6 @@ jupyter notebook
 
 ---
 
-## 📌 Example Visualizations
-
-### Flux Graph — Star with Exoplanet
-
-![Flux Graph With Exoplanet](images/flux_with_exoplanet.png)
-
-### Flux Graph — Star without Exoplanet
-
-![Flux Graph Without Exoplanet](images/flux_without_exoplanet.png)
-
-### Pairplot of Features
-
-![Pairplot](images/pairplot.png)
-
-### KDE Plot of Flux.1
-
-![KDE Plot](images/kde_flux1.png)
-
-### Confusion Matrix
-
-![Confusion Matrix](images/confusion_matrix.png)
-
----
-
 ## 📚 References
 
 * [NASA Kepler Mission Data](https://www.nasa.gov/mission_pages/kepler/main/index.html)
