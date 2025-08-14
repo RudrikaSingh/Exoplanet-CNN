@@ -1,9 +1,6 @@
----
-
 # Exoplanet Detection Using Convolutional Neural Networks (CNNs)
 
 ## 📌 Project Overview
-
 This project applies **deep learning** techniques—specifically **Convolutional Neural Networks (CNNs)**—to detect exoplanets from **flux time-series data** collected by the **NASA Kepler Space Telescope**.
 
 Exoplanets are planets that orbit stars outside our solar system. The **transit method** is used here: when a planet passes in front of its star, it causes a slight dip in the star’s brightness. This periodic dimming can be detected and classified using machine learning.
@@ -11,75 +8,63 @@ Exoplanets are planets that orbit stars outside our solar system. The **transit 
 ---
 
 ## 🛰 Dataset
-
-* **Source:** NASA Kepler mission
-* **Observations:** Over 3,000 flux values per star
-* **Label meanings:**
-
-  * `1` → Star with at least one exoplanet
-  * `0` → No exoplanet detected
+- **Source:** NASA Kepler mission  
+- **Observations:** Over 3,000 flux values per star  
+- **Label meanings:**
+  - `1` → Star with at least one exoplanet  
+  - `0` → No exoplanet detected  
 
 ---
 
 ## ⚙ Workflow
-
 1. **Data Preprocessing**
-
-   * Shuffle and split into training/testing sets (80/20)
-   * Separate features (flux values) from target (label)
-   * Reshape data for CNN input
+   - Shuffle and split into training/testing sets (80/20)
+   - Separate features (flux values) from target (label)
+   - Reshape data for CNN input
 
 2. **Visualization**
-
-   * Flux graphs for stars with/without exoplanets
-   * Pairplots & KDE plots for exploratory data analysis
-   * Confusion matrix for model performance
+   - Flux graphs for stars with/without exoplanets
+   - Pairplots & KDE plots for exploratory data analysis
+   - Confusion matrix for model performance
 
 3. **Model Architecture**
-
-   * Multiple **Conv1D** layers with Batch Normalization
-   * **MaxPooling1D** for feature reduction
-   * **Global Average Pooling** for generalization
-   * Dense layers with Dropout for classification
-   * **Sigmoid activation** for binary classification
+   - Multiple **Conv1D** layers with Batch Normalization
+   - **MaxPooling1D** for feature reduction
+   - **Global Average Pooling** for generalization
+   - Dense layers with Dropout for classification
+   - **Sigmoid activation** for binary classification
 
 4. **Training**
-
-   * Optimizer: Adam (`learning_rate=0.0005`)
-   * Loss: Binary Crossentropy
-   * Metrics: Accuracy
-   * Validation split: 20% of training data
+   - Optimizer: Adam (`learning_rate=0.0005`)
+   - Loss: Binary Crossentropy
+   - Metrics: Accuracy
+   - Validation split: 20% of training data
 
 5. **Evaluation**
-
-   * Thresholded predictions at 0.5
-   * Confusion matrix visualization
-   * Accuracy, precision, recall metrics
+   - Thresholded predictions at 0.5
+   - Confusion matrix visualization
+   - Accuracy, precision, recall metrics
 
 ---
 
 ## 📊 Model Summary
-
-* **Input:** Flux time-series data
-* **Output:** Binary classification (Exoplanet / No Exoplanet)
-* **Performance:** High accuracy on test data
-* **Future Improvements:**
-
-  * Explore attention-based architectures
-  * Integrate multi-spectral data
-  * Tune hyperparameters for optimal performance
+- **Input:** Flux time-series data
+- **Output:** Binary classification (Exoplanet / No Exoplanet)
+- **Performance:** High accuracy on test data
+- **Future Improvements:**
+  - Explore attention-based architectures
+  - Integrate multi-spectral data
+  - Tune hyperparameters for optimal performance
 
 ---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-
 Install Python dependencies:
-
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn tensorflow
-```
+````
 
 ### Run the Notebook
 
@@ -111,4 +96,5 @@ jupyter notebook
 
 This project draws inspiration from research in **AI for astronomy** and competitions like the **Kepler exoplanet detection challenge**.
 
----
+```
+
